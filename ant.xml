@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="export jar" name="Maia Input Device">
+	<target name="export jar">
+		<jar destfile="${libraries.home}/maiaInputDevice/maiaInputDevice.jar">
+			<zipfileset src="${libraries.home}/jinput/2.0.9/jinput-2.0.9.jar" />
+			<zipfileset src="${libraries.home}/jinput/2.0.9/jinput-test.jar" />
+			<fileset dir="bin" />
+		</jar>
+	</target>
+</project>
